@@ -1,4 +1,4 @@
-package com.example.sif.mvptest;
+package com.example.sif.mvptest.Controllers.Activities.Reactive_Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.sif.mvptest.Model.DataModels.Note;
+import com.example.sif.mvptest.R;
 
 import java.util.ArrayList;
 import java.util.List;
