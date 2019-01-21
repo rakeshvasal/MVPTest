@@ -18,5 +18,6 @@ public class DataBindingActivity extends AppCompatActivity {
         ActivityDataBindingBinding activityDataBindingBinding = DataBindingUtil.setContentView(this, R.layout.activity_data_binding);
         Contact contact = new Contact("Rakesh", "Vasal Passsed");
         activityDataBindingBinding.setContact(contact);
+        setSupportActionBar(activityDataBindingBinding.toolbar);
     }
 }
