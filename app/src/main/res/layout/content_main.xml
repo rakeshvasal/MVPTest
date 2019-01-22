@@ -6,33 +6,69 @@
     <data>
 
         <variable
-            name="contact"
-            type="com.example.sif.mvptest.Model.Contact" />
+            name="user"
+            type="com.example.sif.mvptest.Model.User" />
 
+        <variable
+            name="clickHandler"
+            type="com.example.sif.mvptest.Controllers.Activities.DataBinding_Activities.DataBindingActivity.ClickHandler" />
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Controllers.Activities.DataBinding_Activities.DataBindingActivity"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context=".Controllers.Activities.DataBinding_Activities.DataBindingActivity">
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
             android:layout_marginTop="20dp"
-            android:textStyle="bold"
-            android:text="@{contact.firstName}"/>
+            android:text="@{user.firstName}"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
             android:layout_marginTop="20dp"
-            android:textStyle="bold"
-            android:text="@{contact.lastName}"/>
+            android:text="@{user.lastname}"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
+        <EditText
+            android:id="@+id/txtfName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txtlName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="@{clickHandler::handleButtonClick }"
+            android:text="Button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onLongClick="@{clickHandler::handleButtonLongClick}"
+            android:text="Long Click Button"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:text="Button with Param"
+            android:visibility="gone"/>
     </LinearLayout>
 </layout>

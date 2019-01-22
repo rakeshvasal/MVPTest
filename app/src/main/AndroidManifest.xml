@@ -21,11 +21,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Controllers.Activities.MVP_Activities.MainActivity" />
-        <activity android:name=".Controllers.Activities.Reactive_Activities.ReactiveTestActivity">
-        </activity>
+        <activity android:name=".Controllers.Activities.Reactive_Activities.ReactiveTestActivity"></activity>
         <activity android:name=".GoogleSignInActivity" />
-        <activity android:name=".Controllers.Activities.DataBinding_Activities.DataBindingActivity"
+        <activity
+            android:name=".Controllers.Activities.DataBinding_Activities.DataBindingActivity"
             android:theme="@style/NoActionTheme">
+
+        </activity>
+        <activity android:name=".Controllers.Activities.DataBinding_Activities.RecyclerDataActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -8,8 +8,12 @@
     <data>
 
         <variable
-            name="contact"
-            type="com.example.sif.mvptest.Model.Contact" />
+            name="user"
+            type="com.example.sif.mvptest.Model.User" />
+
+        <variable
+            name="clickHandler"
+            type="com.example.sif.mvptest.Controllers.Activities.DataBinding_Activities.DataBindingActivity.ClickHandler" />
 
     </data>
 
@@ -31,6 +35,6 @@
         <include
             android:id="@+id/content"
             layout="@layout/content_main"
-            bind:contact="@{contact}" />
+            bind:user="@{user}" />
     </LinearLayout>
 </layout>
