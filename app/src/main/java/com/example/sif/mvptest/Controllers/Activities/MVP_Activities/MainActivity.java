@@ -12,12 +12,13 @@ import com.example.sif.mvptest.Presenter.LoginPresenter;
 import com.example.sif.mvptest.R;
 import com.example.sif.mvptest.View.LoginView;
 
-public class MainActivity extends AppCompatActivity implements LoginView{
+public class MainActivity extends AppCompatActivity implements LoginView {
 
     TextView login;
-    EditText username,password;
+    EditText username, password;
 
     LoginPresenter loginPresenter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +27,16 @@ public class MainActivity extends AppCompatActivity implements LoginView{
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
 
-        loginPresenter = new PresenterModel(MainActivity.this);
+        //We create an instance of presenter interface and initialize
+        //it with the Constructor of the Presenter Model Constructor
+        //which implements the Presenter Interface, and then use the
+        //instance to call the method of the presenter interface.
+
+        //Just Because the Main Activity Implements Login View i.e
+        //View Interface we can pass this and the instance or context
+        //of the Login view is passed on to to the presenter model.
+
+        loginPresenter = new PresenterModel(this);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements LoginView{
                 String uname = username.getText().toString();
                 String pass = password.getText().toString();
 
-                loginPresenter.perFormLogin(uname,pass);
+                loginPresenter.perFormLogin(uname, pass);
             }
         });
     }

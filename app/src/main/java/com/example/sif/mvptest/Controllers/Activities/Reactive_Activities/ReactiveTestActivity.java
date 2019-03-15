@@ -57,7 +57,7 @@ public class ReactiveTestActivity extends AppCompatActivity {
         Observable<String> animalsObservable = getObservables();
         DisposableObserver<String> animalsObserver = getAnimalsObserver();
 
-        DisposableObserver<String> allcapsObserver = getAllCapsObserver();
+        DisposableObserver<String> allCapsObserver = getAllCapsObserver();
 
         compositeDisposable.add(
                 animalsObservable
@@ -88,7 +88,7 @@ public class ReactiveTestActivity extends AppCompatActivity {
                                 return s.toUpperCase();
                             }
                         })
-                        .subscribeWith(allcapsObserver));
+                        .subscribeWith(allCapsObserver));
 
 
         customDisposable.add(getCustomObjectObservable()
