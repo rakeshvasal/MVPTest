@@ -12,6 +12,8 @@ import com.example.sif.mvptest.Presenter.LoginPresenter;
 import com.example.sif.mvptest.R;
 import com.example.sif.mvptest.View.LoginView;
 
+import java.util.LinkedList;
+
 public class MainActivity extends AppCompatActivity implements LoginView {
 
     TextView login;
@@ -33,8 +35,8 @@ public class MainActivity extends AppCompatActivity implements LoginView {
         //instance to call the method of the presenter interface.
 
         //Just Because the Main Activity Implements Login View i.e
-        //View Interface we can pass this and the instance or context
-        //of the Login view is passed on to to the presenter model.
+        //View Interface we can pass this as an instance or context
+        //of the Login View is passed on to to the presenter model.
 
         loginPresenter = new PresenterModel(this);
 
