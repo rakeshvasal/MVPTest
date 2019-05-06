@@ -1,6 +1,9 @@
 package com.example.sif.mvptest;
 
-import com.google.android.gms.common.api.Api;
+import com.example.sif.mvptest.Controllers.Activities.Testing.ApiInterface;
+
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
 
@@ -23,7 +26,7 @@ public class RetrofitClient {
         return mInstance;
     }
 
-    public Api getApi() {
-        return retrofit.create(Api.class);
+    public ApiInterface getApi() {
+        return retrofit.create(ApiInterface.class);
     }
 }

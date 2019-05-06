@@ -1,7 +1,7 @@
 package com.example.sif.mvptest.Controllers.Activities.MVP_Activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -11,8 +11,6 @@ import com.example.sif.mvptest.Model.PresenterModel;
 import com.example.sif.mvptest.Presenter.LoginPresenter;
 import com.example.sif.mvptest.R;
 import com.example.sif.mvptest.View.LoginView;
-
-import java.util.LinkedList;
 
 public class MainActivity extends AppCompatActivity implements LoginView {
 

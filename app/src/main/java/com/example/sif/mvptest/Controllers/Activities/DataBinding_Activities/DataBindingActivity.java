@@ -2,8 +2,8 @@ package com.example.sif.mvptest.Controllers.Activities.DataBinding_Activities;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;

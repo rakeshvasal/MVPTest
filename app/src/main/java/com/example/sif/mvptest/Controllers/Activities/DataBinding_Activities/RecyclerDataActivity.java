@@ -1,8 +1,8 @@
 package com.example.sif.mvptest.Controllers.Activities.DataBinding_Activities;
 
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 
 import com.example.sif.mvptest.Adapter.RecyclerAdapter;
