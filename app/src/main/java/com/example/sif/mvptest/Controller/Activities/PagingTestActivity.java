@@ -1,4 +1,4 @@
-package com.example.sif.mvptest.Controllers.Activities;
+package com.example.sif.mvptest.Controller.Activities;
 
 import android.arch.lifecycle.Observer;
 
@@ -23,7 +23,7 @@ public class PagingTestActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_paging_test);
 
 
         //setting up recyclerview

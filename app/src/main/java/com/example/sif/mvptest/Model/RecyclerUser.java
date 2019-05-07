@@ -8,12 +8,12 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class RecyclerUser {
     public String name,email;
-    public int imageid;
+    public int imageId;
 
-    public RecyclerUser(String name, String email, int imageid) {
+    public RecyclerUser(String name, String email, int imageId) {
         this.name = name;
         this.email = email;
-        this.imageid = imageid;
+        this.imageId = imageId;
     }
 
     @BindingAdapter("android:imageUrl")

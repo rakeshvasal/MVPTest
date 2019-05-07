@@ -1,6 +1,6 @@
 package com.example.sif.mvptest;
 
-import com.example.sif.mvptest.Controllers.Activities.Testing.ApiInterface;
+import com.example.sif.mvptest.Controller.Testing.ApiInterface;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

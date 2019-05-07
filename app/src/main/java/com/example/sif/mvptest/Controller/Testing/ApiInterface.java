@@ -1,4 +1,4 @@
-package com.example.sif.mvptest.Controllers.Activities.Testing;
+package com.example.sif.mvptest.Controller.Testing;
 
 import com.example.sif.mvptest.Model.DataModels.StackApiResponse;
 

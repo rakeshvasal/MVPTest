@@ -1,4 +1,4 @@
-package com.example.sif.mvptest.Controllers.Activities.Reactive_Activities;
+package com.example.sif.mvptest.Controller.Activities.Reactive_Activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

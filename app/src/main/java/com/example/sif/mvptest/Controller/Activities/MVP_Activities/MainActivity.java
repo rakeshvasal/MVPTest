@@ -1,4 +1,4 @@
-package com.example.sif.mvptest.Controllers.Activities.MVP_Activities;
+package com.example.sif.mvptest.Controller.Activities.MVP_Activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

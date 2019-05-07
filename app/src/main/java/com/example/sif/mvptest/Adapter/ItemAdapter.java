@@ -29,7 +29,7 @@ public class ItemAdapter extends PagedListAdapter<Item, ItemAdapter.ItemViewHold
     @NonNull
     @Override
     public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mCtx).inflate(R.layout.recyclerview_users, parent, false);
+        View view = LayoutInflater.from(mCtx).inflate(R.layout.paging_recycler_view_users, parent, false);
         return new ItemViewHolder(view);
     }
 
@@ -42,7 +42,7 @@ public class ItemAdapter extends PagedListAdapter<Item, ItemAdapter.ItemViewHold
             Glide.with(mCtx)
                     .load(item.owner.profile_image)
                     .into(holder.imageView);
-        } else {
+        }else{
             Toast.makeText(mCtx, "Item is null", Toast.LENGTH_LONG).show();
         }
     }
@@ -53,7 +53,6 @@ public class ItemAdapter extends PagedListAdapter<Item, ItemAdapter.ItemViewHold
                 public boolean areItemsTheSame(Item oldItem, Item newItem) {
                     return oldItem.question_id == newItem.question_id;
                 }
-
 
                 @Override
                 public boolean areContentsTheSame(Item oldItem, Item newItem) {
